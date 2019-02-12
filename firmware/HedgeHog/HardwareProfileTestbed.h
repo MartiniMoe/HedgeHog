@@ -113,7 +113,8 @@ extern char is_logging;
 /******************************************************************************/
 /******** Power Circuit sense pins definitions and options ********************/
 /******************************************************************************/
-//#define USBP_INT             
+#define USBP_INT			PORTDbits.RD5		// Charger "POK"
+#define USBP_INT_TRIS		TRISDbits.TRISD5
 
 /******************************************************************************/
 /******** Button definitions and options **************************************/
